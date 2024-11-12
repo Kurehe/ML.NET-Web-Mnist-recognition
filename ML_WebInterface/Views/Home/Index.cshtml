@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = "Number Recognition";
+}
+
+<div class="Content">
+    <div class="blockHolst">
+        <div>
+            <label>холст для рисования</label>
+            <div class="mainAndChildHolst">
+                <canvas class="holst" id="canvas" width="250" height="250"></canvas>
+                <canvas class="holst" id="canvas2" width="28" height="28"></canvas>
+            </div>            
+        </div>
+
+        <div class="btnBlock">
+            <div>
+                <button class="styleButtons" id="btn_recognize" disabled>Распознать</button>
+                <button class="styleButtons" id="btn_clear">Очистить</button>
+            </div>
+            
+            <div>
+                <label for="">Ширина линии: </label> <input type="text" id="lineWidth" style="width: 90px;" />
+                <button class="styleButtons" id="btn_apply_lineWidth">Применить</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="resultBlock">
+        <div class="resListMl">
+            <label>Результат распознавания обычной НС</label>
+            <div>
+                <ol class="listRes" id="list_simpleML" start="0">
+                    <!-- оценки -->
+                </ol>
+            </div>
+        </div>
+        <div class="resListMl">
+            <label>Результат распознавания сверточной НС</label>
+            <div>
+                <ol class="listRes" id="list_Conv2DML" start="0">
+                    <!-- оценки -->
+                </ol>
+            </div>
+        </div>
+    </div>    
+</div>
+
+
+<div id="backgrounImg"></div>
+
+
+<script src="~/js/microsoft/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>

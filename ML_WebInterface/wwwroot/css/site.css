@@ -1,0 +1,100 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    
+}
+
+#backgrounImg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 50%;
+    width: 37%;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0.0;
+    background-image: url(../Pic/photo_back.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom 60px;
+    background-size: 100%;
+}
+
+div#backgrounImg:hover {
+    transition: opacity 1.5s ease-in-out;
+    opacity: 1;
+}
+
+
+.Content {
+    /*margin: 0px 0px;
+    width: 100%;*/
+}
+
+.blockHolst {
+    display: flex;
+    align-items: center;
+}
+
+.mainAndChildHolst {
+    display: flex;
+    align-items: flex-start;
+}
+
+.holst {
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    margin: 2px;
+}
+
+/*.holst:hover {
+    border-color: red;
+    border-width: 2px;
+}*/
+
+.btnBlock {
+    display: flex;
+    flex-direction: column;
+}
+
+.styleButtons {
+    padding: 2px 6px;
+    margin: 2px;
+    height: max-content;
+    width: max-content;
+}
+
+.resultBlock {
+    display: flex;
+}
+
+.resListMl {
+    padding: 5px;
+}
+
+.listRes {
+    list-style-type: none; /* Убираем исходные маркеры */
+    counter-reset: my-counter -1; /* Задаём имя счетчика */
+}
+
+.listRes ::before {
+    content: counter(my-counter); /* Выводим число */
+    counter-increment: my-counter; /* Увеличиваем значение счётчика */
+    /*color: #ED1C24;*/ /* Цвет текста */
+    font-weight: bold; /* Жирное начертание */
+    /*font-style: italic;*/ /* Курсивное начертание */
+    margin-right: 1.5em; /* Расстояние от цифры до текста */
+}

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ML_WebInterface", "ML_WebInterface\ML_WebInterface.csproj", "{CAEF5DF4-6111-4B4A-B3BB-F0F6E7346C0C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CAEF5DF4-6111-4B4A-B3BB-F0F6E7346C0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAEF5DF4-6111-4B4A-B3BB-F0F6E7346C0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAEF5DF4-6111-4B4A-B3BB-F0F6E7346C0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAEF5DF4-6111-4B4A-B3BB-F0F6E7346C0C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {962740B3-49AB-4FD7-8492-863F7BBB3C36}
+	EndGlobalSection
+EndGlobal
